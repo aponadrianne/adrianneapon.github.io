@@ -838,36 +838,30 @@ p.explore.montserrat-16 {
     width: fit-content;
     margin: 0 auto;
 }
-.tab-pane p:first-child {
+.tab-pane p:first-child, .tab-pane p:nth-child(2) {
     margin: 0 40px 0 0;
-} 
-.tab-pane p:nth-child(2) {
+}  
+.tab-pane p:nth-child(3) {
     margin: 0;
 }
 .design-wrapper {
     padding: 0 12px;
 }
-.uidesign-wrapper, .webdesign-wrapper {
+.uidesign-wrapper, .webdesign-wrapper, .graphicdesign-wrapper {
     display: none;
 } 
-.uidesign-wrapper.active {
+.uidesign-wrapper.active, .webdesign-wrapper.active, .graphicdesign-wrapper.active {
     display: block;  
-} 
-.webdesign-wrapper.active {
-    display: block;
-}
-#uidesign, #webdesign {
+}  
+#uidesign, #webdesign, #graphicdesign {
     color: #9f9f9f;
 }
-#uidesign:hover, #webdesign:hover {
+#uidesign:hover, #webdesign:hover, #graphicdesign:hover {
     cursor: pointer;
 }
-#uidesign.active {
+#uidesign.active, #webdesign.active, #graphicdesign.active {
     color: var(--primary-color);
-}
-#webdesign.active {
-    color: var(--primary-color);
-}
+} 
 .portfolio {
     padding-top: 40px;
 }
@@ -904,6 +898,82 @@ a.home:hover {
     margin-bottom: 30px;
     font-size: 24px;
     font-weight: 400 !important;
+    text-align: center;
+}
+
+
+
+
+/* GRAPHIC STYLE */
+.gallery {
+    display: flex;
+    max-width: 100%;
+    gap: 20px;
+    margin: 0;
+} 
+  .gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s;
+  }
+  .gallery-items {
+    width: calc(33.33% - 13.3333px);
+    float: left;
+  }
+  .gallery-items img {
+    margin-bottom: 16px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  .site-proj-item img {
+    cursor: pointer;
+  }
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  img.logo-img {
+    width: 175px;
+    height: 175px;
+    transition: transform 0.2s;
+}
+  img.logo-img:hover {
+    transform: scale(1.05);
+}
+p.graphics.proj-title {
+    margin-top: 45px;
+}
+ 
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+ 
+  .modal-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 8px;
+  }
+ 
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .site-proj-wrapper.logo-gallery {
     text-align: center;
 }
 
