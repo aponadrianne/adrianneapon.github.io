@@ -204,6 +204,7 @@
     <div class="tab-pane">
         <p class="poppins-16 active" id="uidesign">UI & UX DESIGN</p>
         <p class="poppins-16" id="webdesign">WEBSITE DESIGN</p>
+        <p class="poppins-16" id="graphicdesign">GRAPHIC DESIGN</p>
     </div>
 
 
@@ -623,6 +624,125 @@
 
 
 
+
+
+    
+    <div class="design-wrapper  graphicdesign-wrapper" id="graphicdesign-box">
+                 
+                 
+        <p class="proj-title">Graphic Designs</p>
+    
+        <div class="projects"> 
+
+            <div class="site-proj-wrapper">  
+                
+                <div class="gallery">
+                    <div class="gallery-items">
+                        <img src="graphics/flyer.jpg" alt="Image 1" onclick="openModal(this.src)">
+                        <img src="graphics/banner3.png" alt="Image 2" onclick="openModal(this.src)">
+                        <img src="graphics/infograph.jpg" alt="Image 2" onclick="openModal(this.src)">
+                    </div>
+
+                    <div class="gallery-items">
+                        <img src="graphics/brochures.jpg" alt="Image 3" onclick="openModal(this.src)">
+                        <img src="graphics/Poster.jpg" alt="Image 4" onclick="openModal(this.src)">
+                        <img src="graphics/banner4.png" alt="Image 6" onclick="openModal(this.src)">
+                        <img src="graphics/banner.png" alt="Image 6" onclick="openModal(this.src)">
+                    </div>
+
+                    <div class="gallery-items">
+                        <img src="graphics/socmed2.jpg" alt="Image 5" onclick="openModal(this.src)">
+                        <img src="graphics/banner2.png" alt="Image 6" onclick="openModal(this.src)">
+                        <img src="graphics/socmed.png" alt="Image 6" onclick="openModal(this.src)">
+                        <img src="graphics/banner5.png" alt="Image 6" onclick="openModal(this.src)">
+                    </div>
+                </div> 
+                
+                <p class="graphics proj-title">Thumbnail</p>
+
+                
+        
+                <div class="projects"> 
+        
+                        <div class="site-proj-wrapper">  
+        
+                                <div class="site-proj-item">
+                                        <img src="graphics/thumbn6.png" alt="Image 6" onclick="openModal(this.src)">
+                                </div> 
+        
+                                <div class="site-proj-item">
+                                        <img src="graphics/thumbn1.png" alt="Image 6" onclick="openModal(this.src)">
+                                </div> 
+        
+                                <div class="site-proj-item">
+                                        <img src="graphics/thumbn3.png" alt="Image 6" onclick="openModal(this.src)">
+                                </div> 
+        
+                                <div class="site-proj-item">
+                                        <img src="graphics/thumbn4.png" alt="Image 6" onclick="openModal(this.src)">
+                                </div> 
+        
+                                <div class="site-proj-item">
+                                        <img src="graphics/thumbn5.png" alt="Image 6" onclick="openModal(this.src)">
+                                </div> 
+        
+                                <div class="site-proj-item">
+                                        <img src="graphics/thumbn2.png" alt="Image 6" onclick="openModal(this.src)">
+                                </div> 
+
+                        </div>
+                </div> 
+        
+                <p class="graphics proj-title">Logo</p>
+
+                <div class="projects"> 
+        
+                        <div class="site-proj-wrapper logo-gallery">  
+        
+                                <div class="site-proj-item logo-gallery">
+                                        <img class="logo-img" src="graphics/logo2.png" alt="Image 6" onclick="openModal(this.src)">
+                                        <p class="poppins-13 text-center">Uncrowned Kings</p>
+                                </div> 
+        
+                                <div class="site-proj-item logo-gallery">
+                                        <img class="logo-img" src="graphics/logo1.png" alt="Image 6" onclick="openModal(this.src)">
+                                        <p class="poppins-13 text-center">Gamers Thrown</p>
+                                </div> 
+        
+                                <div class="site-proj-item logo-gallery">
+                                        <img class="logo-img" src="graphics/logo3.png" alt="Image 6" onclick="openModal(this.src)">
+                                        <p class="poppins-13 text-center">CGCF</p>
+                                </div> 
+        
+                                <div class="site-proj-item logo-gallery">
+                                        <img class="logo-img" src="graphics/logo4.png" alt="Image 6" onclick="openModal(this.src)">
+                                        <p class="poppins-13 text-center">Artsy Fartsy</p>
+                                </div>  
+        
+                                <div class="site-proj-item logo-gallery">
+                                        <img class="logo-img" src="graphics/logo5.png" alt="Image 6" onclick="openModal(this.src)">
+                                        <p class="poppins-13 text-center">Luana Day Spa</p>
+                                </div>  
+
+                        </div>
+                </div>
+
+                                
+                <!-- Modal Structure -->
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImage" alt="Full Size Image">
+                </div>
+
+            </div>
+
+        </div>  
+
+    </div>
+
+
+
+
     
 
                 <div class="main-wrapper contact" id="contact">
@@ -646,13 +766,16 @@
         $(document).ready(function () {  
             var $uidesign = $("#uidesign");
             var $webdesign = $("#webdesign");
+            var $graphicdesign = $("#graphicdesign");
     
                 $uidesign.click(function () { 
                         $("#uidesign-box").addClass("active");  
-                        $("#uidesign").addClass("active");  
+                        $("#uidesign").addClass("active");   
 
                         $("#webdesign-box").removeClass("active"); 
                         $("#webdesign").removeClass("active"); 
+                        $("#graphicdesign-box").removeClass("active"); 
+                        $("#graphicdesign").removeClass("active"); 
                 }); 
     
                 $webdesign.click(function () {  
@@ -661,8 +784,33 @@
 
                         $("#uidesign-box").removeClass("active"); 
                         $("#uidesign").removeClass("active");  
+                        $("#graphicdesign-box").removeClass("active"); 
+                        $("#graphicdesign").removeClass("active"); 
+                }); 
+    
+                $graphicdesign.click(function () {  
+                        $("#graphicdesign-box").addClass("active");  
+                        $("#graphicdesign").addClass("active");  
+
+                        $("#uidesign-box").removeClass("active"); 
+                        $("#uidesign").removeClass("active");  
+                        $("#webdesign-box").removeClass("active"); 
+                        $("#webdesign").removeClass("active"); 
                 }); 
         });
+
+        
+        // Function to open the modal and display the clicked image
+        function openModal(src) {
+        document.getElementById("myModal").style.display = "block";
+        document.getElementById("modalImage").src = src;
+        }
+
+        // Function to close the modal
+        function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+        }
+        
 </script>
 
                 
