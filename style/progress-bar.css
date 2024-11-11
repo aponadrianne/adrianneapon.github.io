@@ -170,6 +170,7 @@
 .skills-progress-bar { 
   padding-top: 5px;
   padding-bottom: 40px;
+  overflow-x: hidden;
 }
 
 .skills-progress-bar::-webkit-scrollbar {
