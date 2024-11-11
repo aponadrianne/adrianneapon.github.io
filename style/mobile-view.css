@@ -167,6 +167,9 @@
         width: 90%;
         height: auto;
     }
+    .site-proj-item, .site-proj-item img {
+        height: auto; 
+    }
     .rotate {
         display: block;
         bottom: unset !important;   
@@ -195,6 +198,13 @@
         bottom: unset !important;   
         top: 17.7rem !important;
     } 
+    .gallery-items {
+        width: 100%;
+        float: unset;
+    }
+    .gallery {
+        display: block; 
+    }
 }
 
 @media (max-width: 465px){ 
